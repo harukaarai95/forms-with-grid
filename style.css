@@ -1,0 +1,476 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    width: 100%;
+    font-family: "Inter", sans-serif;
+    font-size: 100%;
+}
+
+header{
+    margin: 20px;
+    background-color: aliceblue;
+}
+
+
+button:hover{
+    background-color: rgb(207, 207, 207);
+}
+/*********** Mocuk up 1 **************/
+
+.top{
+    display: grid;
+    grid-template-columns: 598px;
+    grid-template-rows: 40px 20px;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.wrapper h1{
+    font-size: 37px;
+    font-weight: bold;
+    margin-top: 5px;
+    text-align: center;
+    color: white;
+}
+
+.wrapper p{
+    font-size: 18px;
+    color: white;
+    text-align: center;
+}
+
+.wrapper{
+    box-sizing: border-box;
+    width: 598px;
+    height: 495px;
+    padding-top: 96px;
+    background-color: rgba(22, 42, 227, 85%);
+    background-size:cover;
+    z-index: 1;
+    margin: 10px;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 40px 20px 200px;
+    gap: 10px;
+    width: 440px;
+    margin: 0 auto;
+}
+
+.container > h1{
+    grid-row: 1/2;
+    grid-column: 1/3;
+}
+
+.container > p{
+    grid-row: 2/3;
+    grid-column: 1/3;
+}
+
+.contact-form{
+    grid-row: 3/7;
+    grid-column: 1/3;
+    padding-top: 15px;
+}
+
+#contact-form {
+	display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4, 45px);
+    gap: 15px 10px;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.item1{
+    grid-row: 1 / 1;
+    grid-column: 1 / 1;
+}
+
+.item2{
+    grid-row: 1 / 1;
+    grid-column: 2 / 3;
+}
+
+.item3{
+    grid-row: 2 / 3;
+    grid-column: 1 / 3;
+}
+
+.item4{
+    grid-row: 4 / 5;
+    grid-column: 1 / 2;
+}
+
+#fullname,
+#email {
+    display: inline-block;
+    width: 100%;
+    height: 43px;
+}
+
+#tel{
+    display: block;
+    width: 100%;
+    height: 43px;
+}
+
+.item4 > button{
+    display: block;
+    width: 60%;
+    height: 47px;
+    color: #162AE3;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 6px;
+    border: none;
+    background-color: white;
+}
+
+input{
+    border-radius: 6px;
+    border: none;
+}
+
+/*************  Form 2  ****************/
+
+.wrapper-2{
+    background-color: #F2EDE6;
+    color: #00054B;
+    height: 1080px;
+    width: 1920px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.container-2{
+    display: grid;
+    box-sizing: border-box;
+    padding-top: 115px;
+    padding-left: 150px;
+    grid-template-columns: 550px 545px 272px;
+    grid-template-rows: 200px 690px;
+    gap: 120px;
+    grid-template-areas: "left-image title title"
+                         "left-image contact-form-container right-container";                         
+}
+
+.left-image{
+    grid-area: left-image;
+}
+
+.left-image img{
+    border-radius: 0 100px 0 100px;
+    box-sizing: border-box;
+    height: 840px;
+    width: 550px;
+}
+
+.title{
+    grid-area: title;
+    font-size: 112px;
+    margin-top: 60px;
+    font-family: "Playfair Display", serif;
+    font-weight: normal;
+}
+
+.contact-form-container{
+    grid-area: contact-form-container;
+}
+
+.right-container{
+    grid-area: right-container;
+}
+
+.btn{
+    box-sizing: border-box;
+    width: 374px;
+    height: 77px;
+    background-color: #00054B;
+    border-radius: 48px;
+    border: none;
+    color: white;
+    font-size: 24px;
+    font-weight: normal;
+}
+
+.wrapper-2 label{
+    font-size: 32px;
+    display: block;
+    margin-bottom: 10px;
+    color: rgba(0, 2, 75, .5);
+}
+
+.wrapper-2 input{
+    height: 40px;
+    width: 400px;
+    background-color: #F2EDE6;
+    border-bottom: solid 1px #00054B;
+    margin-bottom: 80px;
+}
+
+.right-contact h2,
+.right-loc h2{
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.right-contact p,
+.right-loc p{
+    font-size: 32px;
+}
+
+.right-contact{
+    margin-bottom: 75px;
+}
+
+.right-img img{
+    align-self: center;
+    margin-right: 35px;
+    margin-top: 220px;
+}
+
+/*********** Mockup3 *******************/
+.wrap-form-3{
+    color: #111827;
+    font-family: "Poppins", sans-serif;
+    margin: 10px;
+}
+#appointment-form{
+display: grid;
+width: 786px;
+height: 304px;
+grid-template-columns: 1fr 1fr;
+grid-template-rows: 1fr 1fr 1fr 1fr;
+gap: 20px 20px;
+grid-template-areas: 
+"fullname-three date"
+"email-three message"
+"tel-three message"
+"btn-three btn-three";
+}
+
+.fullname-item-ap {
+    grid-area: fullname-three;
+}
+.email-item-ap {
+    grid-area: email-three;
+}
+.tel-item-ap {
+    grid-area: tel-three;
+}
+.date {
+    grid-area: date;
+}
+.btn-three {
+    grid-area: btn-three;
+}
+.message {
+    grid-area: message;
+}
+
+.container-3 label{
+    display: block;
+    margin-bottom: 10px;
+}
+.container-3 input{
+    background-color: #F6F9FF;
+}
+
+.wrap-form-3 h1{
+    color: #111827;
+    font-weight: bold;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.wrap-form-3 p{
+    margin-bottom: 45px;
+}
+
+
+#full-name-three,
+#e-mail-three,
+#date{
+    display: block;
+    width: 383px;
+    height: 51px;
+    border-radius: 5px;
+    border: none;
+}
+
+#date{
+    background-color: #F6F9FF ;
+    border: none;
+}
+
+.code{
+    width: 73.72px;
+    height: 27px;
+    background-color: #F6F9FF ;
+    border: none;
+}
+
+#tel-three{
+    height: 51px;
+    width: 300px;
+    background-color: #F6F9FF ;
+    border-radius: 5px;
+    border: none;
+}
+
+.t-wrap{
+    background-color: #F6F9FF;
+}
+
+.btn-three{
+    justify-self: end;
+
+}
+
+.book-btn{
+    background-color: #3B82F6;
+    color: white;
+    width: 154px;
+    height: 42px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+}
+
+.message textarea {
+    resize: none;
+    height: 159px;
+    width: 383px;
+    border: none;
+    background-color: #F6F9FF;
+  }
+
+.message ::placeholder{
+    color: #111827;
+  }
+
+/**************** Form4  **********************/
+.bg-4{
+    font-family: "Libre Baskerville", serif;
+    margin: 10px;
+}
+.bg-4 h1{
+    margin-bottom: 15px;
+}
+#job-application {
+    display: grid;
+    height: 325px;
+    grid-template-columns: 220px 220px;
+    grid-template-rows: repeat(6, 1fr);
+    gap: 20px 50px;
+}
+
+.first-name{
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+}
+
+.last-name{
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+}
+
+.email-last{
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+}
+
+.role{
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+    background-color: white;
+    border: solid #D2D2D2 1px;
+    border-radius: 3px;
+    margin-top: 12px;
+}
+
+.address{
+    grid-row: 3;
+    grid-column: 1 / 3;
+}
+
+.city{
+    grid-row: 4;
+    grid-column: 1;
+}
+
+.pincode{
+    grid-row: 4;
+    grid-column: 2;
+}
+
+.start-date{
+    grid-row: 5;
+    grid-column: 1;
+}
+
+.upload{
+    grid-row: 5;
+    grid-column: 2;
+}
+#upload{
+    display: block;
+    margin-top: 12px;
+}
+
+.last-btn{
+    grid-row: 6;
+    grid-column: 2;
+}
+
+.role{
+    justify-self: start;
+    display: block;
+    height: 17px;
+    width: 221px;
+}
+
+#first-name,
+#last-name,
+#e-mail-last,
+#city,
+#pincode,
+#start-date{
+    display: block;
+    height: 17px;
+    width: 220px;
+    margin-top: 12px;
+    border: solid 1px #D2D2D2;
+}
+
+.last-btn button{
+    background-color: #1B52DF;
+    border: none;
+    height: 31px;
+    width: 134px;
+    color: #FFFEFE;
+    font-size: 16px;
+    border-radius: 20px;
+}
+.last-btn{
+    justify-self: end;
+}
+
+.a-text{
+    display: block;
+}
+
+#address{
+    height: 60px;
+    width: 490px;
+    resize: none;
+    border: solid 1px #D2D2D2;
+    margin-top: 12px;
+}

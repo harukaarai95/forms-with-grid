@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connect with Our team</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./form-2.html">Form 2</a></li>
+            <li><a href="./form-3.html">Form 3</a></li>
+            <li><a href="./form-4.html">Form 4</a></li>
+        </ul>
+    </header>
+<div class="wrapper">
+    <div class="container">
+        <h1 class="m-1">Connect With Our Team</h1>
+        <p class="m-1">Fill the form so that our team can reach out to you</p>
+        <div class="contact-form">
+            <form id="contact-form" action="/submit-form" method="post">
+                <div class="item1">
+                    <label for="fullname">
+                        <input id=fullname type="text" name="fullname" placeholder="Name" required>
+                    </label>
+                </div>
+                <div class="item2">
+                    <label for="email">
+                        <input id=email type="email" name="email" placeholder="Email" required>
+                    </label>
+                </div>
+                <div class="item3">
+                    <label for="tel">
+                        <input id="tel" type="tel" name="tel" placeholder="Phone Number" required>
+                    </label>
+                </div>
+                <div class="item4">
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+</html>

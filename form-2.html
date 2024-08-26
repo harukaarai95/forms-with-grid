@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./form-2.html">Form 2</a></li>
+            <li><a href="./form-3.html">Form 3</a></li>
+            <li><a href="./form-4.html">Form 4</a></li>
+        </ul>
+    </header>
+
+    <div class="wrapper-2">
+        <div class="container-2">
+            <div class="left-image">
+                <img src="./img/form2.jpg">
+            </div>
+            <h1 class="title">Contact Us</h1>
+            <form id="contact-form-container" action="/submit-form" method="post">
+                <div class="form-items">
+                    <div class="form-item-a"><label for="full-name">Full Name</label>
+                        <input id=full-name type="text" name="full-name" required>
+                    </div>
+                    <div class="form-item-b"><label for="e-mail">E-mail</label>
+                        <input id="e-mail" type="email" name="e-mail">
+                    </div>
+                    <div class="form-item-c"><label for="message">Message</label>
+                        <input id="message" type="text" name="message">
+                    </div>
+                    <div class="btn-wrap"><button type="submit" class="btn">Contact Us</button></div>
+                </div>
+            </form>
+            <div class="right-container">
+                <div class="right-contact">
+                    <h2>Contact</h2>
+                    <p>hi@green.com</p>
+                </div>
+                <div class="right-loc">
+                    <h2>Based in</h2>
+                    <p>New York,</p>
+                    <p>California, Ohio</p>
+                </div>
+                <div class="right-img">
+                    <a href="#"><img src="./img/Facebook - Negative.png" alt="facebook"></a>
+                    <a href="#"><img src="./img/Instagram - Negative.png" alt="Instagram"></a>
+                    <a href="#"><img src="./img/Twitter - Negative.png" alt="x"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
